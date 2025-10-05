@@ -1,0 +1,67 @@
+version: "3"
+
+services:
+  backend:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  configurator:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  create-site:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  frontend:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  queue-long:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  queue-short:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  scheduler:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
+  websocket:
+    volumes:
+      # Monter le dossier erpnext de votre fork dans le conteneur
+      - C:\Users\Floop\Desktop\erpnext-WashnGo\erpnext:/home/frappe/frappe-bench/apps/erpnext
+      # Conserver les volumes existants
+      - sites:/home/frappe/frappe-bench/sites
+      - logs:/home/frappe/frappe-bench/logs
+
